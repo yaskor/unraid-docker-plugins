@@ -2,7 +2,7 @@
 <Container version="2">
     <Name>xbvr</Name>
     <Category>Cloud:</Category>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/xbvr.png</Icon>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/xbvr.png</Icon>
     <Overview>The ultimate tool for managing your VR **** library.</Overview>
     <GitHub>https://github.com/xbapps/xbvr</GitHub>
     <Registry>https://hub.docker.com/r/xbapps/xbvr</Registry>

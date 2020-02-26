@@ -3,7 +3,7 @@
     <Name>drone-agent</Name>
     <Category>Cloud:</Category>
     <Project>https://drone.io/</Project>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/drone-agent.png</Icon>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/drone-agent.png</Icon>
     <Overview>Drone runner to execute your build pipelines.</Overview>
     <Registry>https://hub.docker.com/r/drone/agent</Registry>
     <Repository>drone/drone-runner-docker:1</Repository>

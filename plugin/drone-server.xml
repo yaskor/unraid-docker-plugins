@@ -3,7 +3,7 @@
     <Name>drone-server</Name>
     <Category>Cloud:</Category>
     <Project>https://drone.io/</Project>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/drone-server.png</Icon>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/drone-server.png</Icon>
     <Overview>Drone is an open source continuous delivery platform that automates your testing and release workflows.</Overview>
     <Registry>https://hub.docker.com/r/drone/drone</Registry>
     <Repository>drone/drone:1</Repository>

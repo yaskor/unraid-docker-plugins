@@ -3,7 +3,7 @@
     <Name>plex</Name>
     <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
     <Project>https://plex.tv/</Project>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/plex.png</Icon>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/plex.png</Icon>
     <Overview>
         [b]Plex Media Server[/b][br][br]
         Enjoy your media on all your devices.[br]

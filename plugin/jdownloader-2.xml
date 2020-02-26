@@ -3,7 +3,7 @@
     <Name>jdownloader-2</Name>
     <Category>Downloaders:</Category>
     <Project>http://jdownloader.org</Project>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/jdownloader-2.png</Icon>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/jdownloader-2.png</Icon>
     <Overview>JDownloader 2 is a free, open-source download management tool.</Overview>
     <Registry>https://hub.docker.com/r/jlesage/jdownloader-2</Registry>
     <Repository>jlesage/jdownloader-2</Repository>

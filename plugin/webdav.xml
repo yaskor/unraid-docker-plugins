@@ -2,7 +2,7 @@
 <Container version="2">
     <Name>webdav</Name>
     <Category>Cloud:</Category>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/webdav.png</Icon>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/webdav.png</Icon>
     <Overview>A webdav docker image.</Overview>
     <GitHub>https://github.com/sashgorokhov/docker-nginx-webdav</GitHub>
     <Registry>https://hub.docker.com/r/sashgorokhov/webdav</Registry>

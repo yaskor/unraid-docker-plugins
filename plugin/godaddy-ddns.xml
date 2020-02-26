@@ -2,7 +2,7 @@
 <Container version="2">
     <Name>godaddy-ddns</Name>
     <Category>Cloud:</Category>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/godaddy-ddns.png</Icon>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/godaddy-ddns.png</Icon>
     <Overview>
         Docker image to provide a DDNS service for godaddy domains. Uses the GoDaddy REST API.[br][br]
         Get a GoDaddy developer key and secret from [span style='color: #ff8c2f;'][a href='https://developer.godaddy.com/keys' target='_blank']https://developer.godaddy.com/keys[/a][/span].
