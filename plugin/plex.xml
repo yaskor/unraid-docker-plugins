@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Name>plex</Name>
+    <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+    <Project>https://plex.tv/</Project>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/plex.png</Icon>
+    <Overview>
+        [b]Plex Media Server[/b][br][br]
+        Enjoy your media on all your devices.[br]
+        All your movie, TV Show, music, and photo collections at your fingertips, anywhere you go on all the devices you love.
+        [br][br]
+        Get your Claim from [a href='https://plex.tv/claim' target='_blank']https://plex.tv/claim[/a]
+    </Overview>
+    <Registry>https://hub.docker.com/r/plexinc/pms-docker</Registry>
+    <GitHub>https://github.com/plexinc/pms-docker</GitHub>
+    <Repository>plexinc/pms-docker</Repository>
+    <Privileged>true</Privileged>
+    <BindTime>true</BindTime>
+    <WebUI>http://[IP]:[PORT:32400]/web</WebUI>
+    <Network Default="bridge">bridge</Network>
+    <Config Required="true" Type="Variable" Name="Claim"
+            Target="PLEX_CLAIM" Default="" Display="always-hide"
+            Description="Plex claim"/>
+    <Config Required="true" Type="Path" Name="Media Path"
+            Target="/media" Default="/mnt/user" Mode="rw" Display="always-hide"
+            Description="Path to your media library"/>
+    <Config Required="true" Type="Path" Name="Config Path"
+            Target="/config" Default="/mnt/user/appdata/plex" Mode="rw" Display="always-hide"
+            Description="Plex config path"/>
+    <ExtraParams>
+        -e 'VERSION'='latest'
+        -e 'PLEX_UID'='99'
+        -e 'PLEX_GID'='100'
+        -p 32400:32400/tcp
+        -p 3005:3005/tcp
+        -p 8324:8324/tcp
+        -p 32469:32469/tcp
+        -p 1900:1900/udp
+        -p 32410:32410/udp
+        -p 32412:32412/udp
+        -p 32413:32413/udp
+        -p 32414:32414/udp
+        -e TZ='Europe/London'
+        -e ADVERTISE_IP='http://192.168.0.10:32400/'
+    </ExtraParams>
+</Container>

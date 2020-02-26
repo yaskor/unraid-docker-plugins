@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>jdownloader-2</Name>
+    <Category>Downloaders:</Category>
+    <Project>http://jdownloader.org</Project>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/jdownloader-2.png</Icon>
+    <Overview>JDownloader 2 is a free, open-source download management tool</Overview>
+    <Registry>https://hub.docker.com/r/jlesage/jdownloader-2</Registry>
+    <Repository>jlesage/jdownloader-2</Repository>
+    <Privileged>false</Privileged>
+    <BindTime>true</BindTime>
+    <Network Default="bridge">bridge</Network>
+    <WebUI>http://[IP]:[PORT:16080]</WebUI>
+    <Config Required="true" Type="Port" Name="Frontend Port"
+            Target="5800" Default="16080" Mode="tcp" Display="always-hide"
+            Description="Port used to access the web interface of the application"/>
+    <Config Required="false" Type="Variable" Name="Password" Mask="true"
+            Target="VNC_PASSWORD" Default="" Display="always-hide" 
+            Description="Password needed to connect to the application's gui"/>
+    <Config Required="true" Type="Variable" Name="Display Width"
+            Target="DISPLAY_WIDTH" Default="1440" Display="always-hide"
+            Description="Width (in pixels) of the application's window"/>
+    <Config Required="true" Type="Variable" Name="Display Height"
+            Target="DISPLAY_HEIGHT" Default="900" Display="always-hide"
+            Description="Height (in pixels) of the application's window"/>
+    <Config Required="true" Type="Path" Name="Output Directory"
+            Target="/output" Default="/mnt/user" Mode="rw" Display="always-hide"
+            Description="This is the default output folder for downloaded files"/>
+    <Config Required="true" Type="Path" Name="Config Directory"
+            Target="/config" Default="/mnt/user/appdata/jdownloader-2" Mode="rw" Display="always-hide"
+            Description="This is where the application stores its configuration"/>
+    <ExtraParams>
+        -e 'USER_ID'='99'
+        -e 'GROUP_ID'='100'
+        -e 'UMASK'='000'
+    </ExtraParams>
+</Container>

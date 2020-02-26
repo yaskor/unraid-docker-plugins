@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Name>nginx-proxy-manager</Name>
+    <Category>Network:Web Network:Proxy Tools:</Category>
+    <Project>https://nginxproxymanager.jc21.com</Project>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/nginx-proxy-manager.png</Icon>
+    <Overview>
+        Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise,
+        including free SSL, without having to know too much about Nginx or Letsencrypt.
+        [br][br]
+        For this container to be accessible from the internet, make sure ports
+        [b]80[/b] and [b]443[/b] on the internet side of your router are properly
+        forwarded to this container.
+        [br][br]
+        [b][span style='color: #ff8c2f;']Default credentials:[/span][/b][br]
+        [b]username[/b]: admin@example.com[br]
+        [b]password[/b]: changeme[br]
+    </Overview>
+    <GitHub>https://github.com/jc21/nginx-proxy-manager</GitHub>
+    <Registry>https://hub.docker.com/r/jlesage/nginx-proxy-manager/</Registry>
+    <Repository>jlesage/nginx-proxy-manager</Repository>
+    <Privileged>false</Privileged>
+    <BindTime>true</BindTime>
+    <Shell>sh</Shell>
+    <WebUI>http://[IP]:[PORT:10070]</WebUI>
+    <Network Default="bridge">bridge</Network>
+    <Config Required="true" Type="Port" Name="Frontend Port" 
+            Target="8181" Default="10070" Mode="tcp" Display="always-hide"
+            Description="Port used to access the web interface of the application"/>
+    <Config Required="true" Type="Port" Name="HTTP Port"
+            Target="8080" Default="10080" Mode="tcp" Display="always-hide"
+            Description="Port to serve http requests. Your router should forward to this port"/>
+    <Config Required="true" Type="Port" Name="HTTPS Port"
+            Target="4443" Default="10443" Mode="tcp" Display="always-hide"
+            Description="Port to serve https requests. Your router should forward to this port"/>
+    <Config Required="true" Type="Path" Name="Config Storage Path" 
+            Target="/config" Default="/mnt/user/appdata/nginx-proxy-manager" Mode="rw" Display="always-hide"
+            Description="Directory which keeps configuration data"/>
+    <ExtraParams>
+        -e 'USER_ID'='99'
+        -e 'GROUP_ID'='100'
+        -e 'UMASK'='000'
+    </ExtraParams>
+</Container>

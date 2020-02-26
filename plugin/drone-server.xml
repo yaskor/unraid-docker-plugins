@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Name>drone-server</Name>
+    <Category>Cloud:</Category>
+    <Project>https://drone.io/</Project>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/drone-server.png</Icon>
+    <Overview>Drone is an open source Continuous Delivery platform that automates your testing and release workflows.</Overview>
+    <Registry>https://hub.docker.com/r/drone/drone</Registry>
+    <Repository>drone/drone:1</Repository>
+    <GitHub>https://github.com/drone/drone</GitHub>
+    <Privileged>true</Privileged>
+    <BindTime>true</BindTime>
+    <WebUI>http://[IP]:[PORT:12080]/</WebUI>
+    <Network Default="bridge">bridge</Network>
+    <Config Required="true" Type="Port" Name="Frontend Port"
+            Target="80" Default="12080" Mode="tcp" Display="always-hide" 
+            Description="Port used to access the web interface of the application"/>
+    <Config Required="true" Type="Port" Name="Server Port"
+            Target="90" Default="12090" Mode="tcp" Display="always-hide"
+            Description="Drone's server port"/>
+    <Config Required="true" Type="Variable" Name="Drone Host"
+            Target="DRONE_SERVER_HOST" Default="" Display="always-hide" 
+            Description="External hostname or IP address (drone.mydomain.net)"/>
+    <Config Required="true" Type="Variable" Name="Drone Protocol"
+            Target="DRONE_SERVER_PROTO" Default="https" Display="always-hide" 
+            Description="External protocol scheme (http/https)"/>
+    <Config Required="true" Type="Variable" Name="Gogs URL"
+            Target="DRONE_GOGS_SERVER" Default="" Display="always-hide"
+            Description="Extenal gogs server address (https://gogs.mydomain.net)"/>
+    <Config Required="true" Type="Variable" Name="Secret" Mask="true"
+            Target="DRONE_RPC_SECRET" Default="" Display="always-hide"
+            Description="Shared secret used to authenticate with your drone server. This must match the secret defined in your drone agent configuration"/>
+    <Config Required="true" Type="Path" Name="Config Storage Path"
+            Target="/data" Default="/mnt/user/appdata/drone-server" Mode="rw" Display="always-hide"
+            Description="Directory which keeps drone's sqlite database"/>
+    <ExtraParams>
+        -e 'DRONE_AGENTS_ENABLED'='true'
+    </ExtraParams>
+</Container>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Name>mysql-dump</Name>
+    <Category>Cloud:</Category>
+    <Project>https://github.com/hlj-toys/mysql-dump</Project>
+    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/mysql-dump.png</Icon>
+    <Overview>
+        A docker image to dump mysql database on a periodic[br][br]
+        [b][span style='color: #ff8c2f;']Schedule syntax:[/span][/b][br]
+        [b]hourly[/b]: 0 minute every hour[br]
+        [b]daily[/b]: 02:00 every day[br]
+        [b]weekly[/b]: 03:00 on Sunday every week[br]
+        [b]monthly[/b]: 05:00 on 1st every month[br]
+        [b]0 5 * * 6[/b]: crontab syntax[br]
+    </Overview>
+    <Registry>https://hub.docker.com/r/betacz/mysql-dump</Registry>
+    <GitHub>https://github.com/hlj-toys/mysql-dump</GitHub>
+    <Repository>betacz/mysql-dump</Repository>
+    <Privileged>true</Privileged>
+    <BindTime>true</BindTime>
+    <Network Default="bridge">bridge</Network>
+    <Config Required="true" Type="Variable" Name="Host"
+            Target="MYSQL_HOST" Default="" Display="always-hide"
+            Description="Database's hostname or address"/>
+    <Config Required="true" Type="Variable" Name="Username"
+            Target="MYSQL_USER" Default="" Display="always-hide"
+            Description="Database's username"/>
+    <Config Required="true" Type="Variable" Name="Password" Mask="true"
+            Target="MYSQL_PASSWORD" Default="" Display="always-hide"
+            Description="Database's password"/>
+    <Config Required="true" Type="Variable" Name="Database"
+            Target="MYSQL_DATABASE" Default="" Display="always-hide"
+            Description="Database's name"/>
+    <Config Required="true" Type="Variable" Name="Schedule"
+            Target="SCHEDULE" Default="daily" Display="always-hide"
+            Description="Explained in Overview"/>
+    <Config Required="true" Type="Variable" Name="Reserves"
+            Target="RESERVES" Default="14" Display="always-hide"
+            Description="Dump file reserve numbers"/>
+    <Config Required="true" Type="Path" Name="Config Storage Path"
+            Target="/backups" Default="/mnt/user/appdata/mysql-dump" Mode="rw" Display="always-hide"
+            Description="Directory in which to save the backups"/>
+    <Config Required="false" Type="Variable" Name="Enable debug mode"
+            Target="DUMP_DEBUG" Default="false" Display="always-hide"
+            Description="If set 'true' then show debug info"/>
+    <Config Required="true" Type="Variable" Name="Options"
+            Target="OPTIONS" Default="--protocol=tcp --port=31611 --default-character-set=utf8 --single-transaction=TRUE --skip-triggers --hex-blob=TRUE --ssl --ssl-verify-server-cert=false" Display="always-hide"
+            Description="Any mysqldump's options you want to use"/>
+</Container>
