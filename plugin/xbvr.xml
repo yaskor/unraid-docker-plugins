@@ -27,7 +27,7 @@
             Target="DEO_PASSWORD" Default="" Display="always-hide"
             Description="Password used to authenticate in deo-vr"/>
     <Config Required="true" Type="Path" Name="Videos Path" 
-            Target="/config" Default="/mnt/user/" Mode="r" Display="always-hide"
+            Target="/videos" Default="/mnt/user/" Mode="r" Display="always-hide"
             Description="Directory which keeps your videos"/>
     <Config Required="true" Type="Path" Name="Config Storage Path"
             Target="/root/.config/" Default="/mnt/user/appdata/xbvr" Mode="rw" Display="always-hide"
