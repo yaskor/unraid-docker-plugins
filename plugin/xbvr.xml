@@ -11,19 +11,19 @@
     <BindTime>true</BindTime>
     <WebUI>http://[IP]:[PORT:17080]</WebUI>
     <Network Default="bridge">bridge</Network>
-    <Config Required="true" Type="Port" Name="Frontend Port"
+    <Config Required="true" Type="Port" Name="Frontend Port" 
             Target="9999" Default="17080" Mode="tcp" Display="always-hide"
             Description="Port used to access the web interface of the application"/>
     <Config Required="true" Type="Variable" Name="Username"
             Target="UI_USERNAME" Default="" Display="always-hide"
-            Description="Username used to access the web interface of the application"/>
-    <Config Required="true" Type="Variable" Name="Password"
+            Description="Username used to access the web interface"/>
+    <Config Required="true" Type="Variable" Name="Password" Mask="true"
             Target="UI_PASSWORD" Default="" Display="always-hide"
-            Description="Password used to access the web interface of the application"/>
+            Description="Password used to access the web interface"/>
     <Config Required="true" Type="Variable" Name="DeoVR Username"
             Target="DEO_USERNAME" Default="" Display="always-hide"
             Description="Username used to authenticate in deo-vr"/>
-    <Config Required="true" Type="Variable" Name="DeoVR Password"
+    <Config Required="true" Type="Variable" Name="DeoVR Password" Mask="true"
             Target="DEO_PASSWORD" Default="" Display="always-hide"
             Description="Password used to authenticate in deo-vr"/>
     <Config Required="true" Type="Path" Name="Videos Path" 
