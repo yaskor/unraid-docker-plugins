@@ -9,7 +9,7 @@
         Enjoy your media on all your devices.[br]
         All your movie, TV Show, music, and photo collections at your fingertips, anywhere you go on all the devices you love.
         [br][br]
-        Get your Claim from [a href='https://plex.tv/claim' target='_blank']https://plex.tv/claim[/a]
+        Get your Claim from [a href='https://plex.tv/claim' target='_blank']https://plex.tv/claim[/a].
     </Overview>
     <Registry>https://hub.docker.com/r/plexinc/pms-docker</Registry>
     <GitHub>https://github.com/plexinc/pms-docker</GitHub>

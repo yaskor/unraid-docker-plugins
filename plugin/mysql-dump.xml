@@ -5,7 +5,7 @@
     <Project>https://github.com/hlj-toys/mysql-dump</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/mysql-dump.png</Icon>
     <Overview>
-        A docker image to dump mysql database on a periodic[br][br]
+        A docker image to dump mysql database on a periodic.[br][br]
         [b][span style='color: #ff8c2f;']Schedule syntax:[/span][/b][br]
         [b]hourly[/b]: 0 minute every hour[br]
         [b]daily[/b]: 02:00 every day[br]

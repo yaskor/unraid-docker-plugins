@@ -4,7 +4,7 @@
     <Category>Cloud:</Category>
     <Project>https://github.com/gogits/gogs</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-templates/master/plugin/icon/gogs.png</Icon>
-    <Overview>Gogs is a painless self-hosted git service</Overview>
+    <Overview>Gogs is a painless self-hosted git service.</Overview>
     <GitHub>https://github.com/gogits/gogs</GitHub>
     <Registry>https://hub.docker.com/r/gogs/gogs/</Registry>
     <Repository>gogs/gogs</Repository>
