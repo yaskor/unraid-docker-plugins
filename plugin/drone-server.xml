@@ -35,5 +35,6 @@
             Description="Directory which keeps drone's sqlite database"/>
     <ExtraParams>
         -e 'DRONE_AGENTS_ENABLED'='true'
+        -e TZ='Europe/London'
     </ExtraParams>
 </Container>
