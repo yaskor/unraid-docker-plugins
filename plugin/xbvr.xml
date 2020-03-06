@@ -11,7 +11,7 @@
     <BindTime>true</BindTime>
     <WebUI>http://[IP]:[PORT:17080]</WebUI>
     <Network Default="bridge">bridge</Network>
-    <Config Required="true" Type="Port" Name="Frontend Port" 
+    <Config Required="true" Type="Port" Name="Frontend Port"
             Target="9999" Default="17080" Mode="tcp" Display="always-hide"
             Description="Port used to access the web interface of the application"/>
     <Config Required="true" Type="Variable" Name="Username"
