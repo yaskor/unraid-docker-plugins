@@ -12,7 +12,7 @@
     <BindTime>true</BindTime>
     <Network Default="bridge">bridge</Network>
     <Config Required="true" Type="Variable" Name="Server Protocol"
-            Target="DRONE_RPC_PROTO" Default="https" Display="always-hide"
+            Target="DRONE_RPC_PROTO" Default="https|http" Display="always-hide"
             Description="Protocol used by your drone server (http/https)"/>
     <Config Required="true" Type="Variable" Name="Server Host"
             Target="DRONE_RPC_HOST" Default="" Display="always-hide"

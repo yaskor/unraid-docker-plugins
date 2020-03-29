@@ -41,7 +41,7 @@
             Target="/backups" Default="/mnt/user/appdata/mysql-dump" Mode="rw" Display="always-hide"
             Description="Directory in which to save the backups"/>
     <Config Required="false" Type="Variable" Name="Enable debug mode"
-            Target="DUMP_DEBUG" Default="false" Display="always-hide"
+            Target="DUMP_DEBUG" Default="false|true" Display="always-hide"
             Description="If set 'true' then show debug info"/>
     <Config Required="true" Type="Variable" Name="Options"
             Target="OPTIONS" Default="--protocol=tcp --port=31611 --default-character-set=utf8 --single-transaction=TRUE --skip-triggers --hex-blob=TRUE --ssl --ssl-verify-server-cert=false" Display="always-hide"
