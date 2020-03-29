@@ -22,7 +22,7 @@
             Target="DRONE_SERVER_HOST" Default="" Display="always-hide" 
             Description="External hostname or IP address (drone.mydomain.net)"/>
     <Config Required="true" Type="Variable" Name="Drone Protocol"
-            Target="DRONE_SERVER_PROTO" Default="https" Display="always-hide"
+            Target="DRONE_SERVER_PROTO" Default="https|http" Display="always-hide"
             Description="External protocol scheme (http/https)"/>
     <Config Required="true" Type="Variable" Name="Gogs URL"
             Target="DRONE_GOGS_SERVER" Default="" Display="always-hide"
