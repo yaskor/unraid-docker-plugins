@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>nginx-proxy-manager</Name>
-    <Category>Network:Web Network:Proxy Tools:</Category>
     <Project>https://nginxproxymanager.jc21.com</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/nginx-proxy-manager.png</Icon>
     <Overview>

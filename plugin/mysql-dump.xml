@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>mysql-dump</Name>
-    <Category>Cloud:</Category>
     <Project>https://github.com/hlj-toys/mysql-dump</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/mysql-dump.png</Icon>
     <Overview>

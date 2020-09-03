@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>godaddy-ddns</Name>
-    <Category>Cloud:</Category>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/godaddy-ddns.png</Icon>
     <Overview>
         Docker image to provide a DDNS service for godaddy domains. Uses the GoDaddy REST API.[br][br]

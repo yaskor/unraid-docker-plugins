@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>gogs</Name>
-    <Category>Cloud:</Category>
     <Project>https://github.com/gogits/gogs</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/gogs.png</Icon>
     <Overview>Gogs is a painless self-hosted git service.</Overview>

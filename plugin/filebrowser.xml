@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>filebrowser</Name>
-    <Category>Cloud:</Category>
     <Project>https://github.com/filebrowser/filebrowser</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/filebrowser.png</Icon>
     <Overview>

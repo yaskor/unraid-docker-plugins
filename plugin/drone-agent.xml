@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>drone-agent</Name>
-    <Category>Cloud:</Category>
     <Project>https://drone.io/</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/drone-agent.png</Icon>
     <Overview>Drone runner to execute your build pipelines.</Overview>

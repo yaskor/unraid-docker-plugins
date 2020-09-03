@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>plex</Name>
-    <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
     <Project>https://plex.tv/</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/plex.png</Icon>
     <Overview>
