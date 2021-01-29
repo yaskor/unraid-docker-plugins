@@ -24,8 +24,11 @@
             Target="/media" Default="/mnt/user" Mode="rw" Display="always-hide"
             Description="Path to your media library"/>
     <Config Required="true" Type="Path" Name="Config Path"
-            Target="/config" Default="/mnt/user/appdata/plex" Mode="rw" Display="always-hide"
+            Target="/config" Default="/mnt/user/appdata/plex/application" Mode="rw" Display="always-hide"
             Description="Plex config path"/>
+    <Config Required="true" Type="Path" Name="Transcode Path"
+            Target="/transcode" Default="/mnt/user/appdata/plex/transcode" Mode="rw" Display="always-hide"
+            Description="Plex transcoding path"/>
     <ExtraParams>
         -e 'VERSION'='latest'
         -e 'PLEX_UID'='99'
