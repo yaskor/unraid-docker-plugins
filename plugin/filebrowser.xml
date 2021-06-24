@@ -30,4 +30,9 @@
     <PostArgs>
         --database /etc/database.db
     </PostArgs>
+    <ExtraParams>
+        -e 'USER_ID'='99'
+        -e 'GROUP_ID'='100'
+        -e 'UMASK'='000'
+    </ExtraParams>
 </Container>
