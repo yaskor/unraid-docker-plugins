@@ -30,7 +30,7 @@
             Target="80" Default="10080" Mode="tcp" Display="always-hide"
             Description="Port to serve http requests. Your router should forward to this port"/>
     <Config Required="true" Type="Port" Name="HTTPS Port"
-            Target="4443" Default="10443" Mode="tcp" Display="always-hide"
+            Target="443" Default="10443" Mode="tcp" Display="always-hide"
             Description="Port to serve https requests. Your router should forward to this port"/>
     <Config Required="true" Type="Path" Name="Config Storage Path" 
             Target="/data" Default="/mnt/user/appdata/nginx-proxy-manager/data" Mode="rw" Display="always-hide"
