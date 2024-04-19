@@ -20,7 +20,7 @@
             Target="PASSWORD" Default="" Display="always-hide"
             Description="Webdav password"/>
     <Config Required="true" Type="Path" Name="WebDAV Path"
-            Target="/media" Default="/mnt/user" Mode="rw" Display="always-hide"
+            Target="/media" Default="/mnt/user/" Mode="rw" Display="always-hide"
             Description="Webdav root path"/>
     <ExtraParams>
         -e 'USER_ID'='99'

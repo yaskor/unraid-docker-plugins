@@ -33,6 +33,5 @@
         -e 'VERSION'='latest'
         -e 'PLEX_UID'='99'
         -e 'PLEX_GID'='100'
-        -e TZ='Europe/London'
     </ExtraParams>
 </Container>
