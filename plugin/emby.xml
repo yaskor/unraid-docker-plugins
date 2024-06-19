@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Name>emby</Name>
+    <Project>https://emby.media/</Project>
+    <Icon>https://raw.githubusercontent.com/yaskor/unraid-docker-plugins/master/plugin/icon/emby.png</Icon>
+    <Overview>
+        Bringing all of your home videos, music, and photos together into one place has never been easier.
+        Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.
+    </Overview>
+    <Registry>https://registry.hub.docker.com/r/binhex/arch-emby/</Registry>
+    <Repository>binhex/arch-emby</Repository>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <BindTime>true</BindTime>
+    <WebUI>http://[IP]:[PORT:11080]/</WebUI>
+    <Network Default="bridge">bridge</Network>
+    <Config Required="true" Type="Port" Name="Frontend Port"
+            Target="8096" Default="11080" Mode="tcp" Display="always-hide"
+            Description="Port used to access the web interface of the application"/>
+    <Config Required="true" Type="Path" Name="Config Storage Path"
+            Target="/config" Default="/mnt/user/appdata/config/emby" Mode="rw" Display="always-hide"
+            Description="Directory which keeps configuration data"/>
+    <Config Required="true" Type="Path" Name="Config Storage Path"
+            Target="/media" Default="/mnt/user/" Mode="rw" Display="always-hide"
+            Description="Directory which keeps media"/>
+    <ExtraParams>
+        -e 'USER_ID'='99'
+        -e 'GROUP_ID'='100'
+        -e 'UMASK'='000'
+        -e 'PUID'='99'
+        -e 'PGID'='100'
+    </ExtraParams>
+</Container>
