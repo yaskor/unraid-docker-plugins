@@ -32,8 +32,11 @@
     <Config Required="true" Type="Port" Name="HTTPS Port"
             Target="443" Default="10443" Mode="tcp" Display="always-hide"
             Description="Port to serve https requests. Your router should forward to this port"/>
-    <Config Required="true" Type="Path" Name="Config Storage Path" 
-            Target="/data" Default="/mnt/user/appdata/nginx-proxy-manager" Mode="rw" Display="always-hide"
+    <Config Required="true" Type="Path" Name="Data Storage Path" 
+            Target="/data" Default="/mnt/user/appdata/nginx-proxy-manager/data" Mode="rw" Display="always-hide"
+            Description="Directory which keeps configuration data"/>
+    <Config Required="true" Type="Path" Name="Letsencrypt Storage Path" 
+            Target="/etc/letsencrypt" Default="/mnt/user/appdata/nginx-proxy-manager/letsencrypt" Mode="rw" Display="always-hide"
             Description="Directory which keeps configuration data"/>
     <ExtraParams>
         -e 'USER_ID'='99'
