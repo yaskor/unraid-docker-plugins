@@ -20,7 +20,7 @@
     <Config Required="true" Type="Path" Name="Config Storage Path"
             Target="/config" Default="/mnt/user/appdata/config/emby" Mode="rw" Display="always-hide"
             Description="Directory which keeps configuration data"/>
-    <Config Required="true" Type="Path" Name="Config Storage Path"
+    <Config Required="true" Type="Path" Name="Media Storage Path"
             Target="/media" Default="/mnt/user/" Mode="rw" Display="always-hide"
             Description="Directory which keeps media"/>
     <ExtraParams>
