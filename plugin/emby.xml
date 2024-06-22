@@ -7,8 +7,8 @@
         Bringing all of your home videos, music, and photos together into one place has never been easier.
         Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.
     </Overview>
-    <Registry>https://registry.hub.docker.com/u/emby/embyserver/</Registry>
-    <Repository>emby/embyserver:latest</Repository>
+	<Registry>https://registry.hub.docker.com/u/emby/embyserver/</Registry>
+	<Repository>emby/embyserver:latest</Repository>
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
     <BindTime>true</BindTime>
@@ -24,11 +24,8 @@
             Target="/mnt" Default="/mnt/user/" Mode="rw" Display="always-hide"
             Description="Library locations directory"/>
     <ExtraParams>
-        -e 'USER_ID'='99'
-        -e 'GROUP_ID'='100'
-        -e 'UMASK'='000'
-        -e 'UID'='2'
-        -e 'GID'='2'
-        -e 'GIDLIST'='2'
+        -e 'UID'='99'
+        -e 'GID'='100'
+        -e 'GIDLIST'='100'
     </ExtraParams>
 </Container>
