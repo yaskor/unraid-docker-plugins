@@ -16,7 +16,7 @@
     [b]password[/b]: changeme[br]
     </Overview>
     <GitHub>https://github.com/jc21/nginx-proxy-manager</GitHub>
-	<Registry>https://hub.docker.com/r/jc21/nginx-proxy-manager/</Registry>
+    <Registry>https://hub.docker.com/r/jc21/nginx-proxy-manager/</Registry>
     <Repository>jc21/nginx-proxy-manager</Repository>
     <Privileged>false</Privileged>
     <BindTime>true</BindTime>
