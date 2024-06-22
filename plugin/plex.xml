@@ -4,11 +4,11 @@
     <Project>https://plex.tv/</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/plex.png</Icon>
     <Overview>
-        [b]Plex Media Server[/b][br][br]
-        Enjoy your media on all your devices.[br]
-        All your movie, TV Show, music, and photo collections at your fingertips, anywhere you go on all the devices you love.
-        [br][br]
-        Get your Claim from [a href='https://plex.tv/claim' target='_blank']https://plex.tv/claim[/a].
+    [b]Plex Media Server[/b][br][br]
+    Enjoy your media on all your devices.[br]
+    All your movie, TV Show, music, and photo collections at your fingertips, anywhere you go on all the devices you love.
+    [br][br]
+    Get your Claim from [a href='https://plex.tv/claim' target='_blank']https://plex.tv/claim[/a].
     </Overview>
     <Registry>https://hub.docker.com/r/plexinc/pms-docker</Registry>
     <GitHub>https://github.com/plexinc/pms-docker</GitHub>
