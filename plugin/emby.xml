@@ -4,11 +4,11 @@
     <Project>https://emby.media/</Project>
     <Icon>https://raw.githubusercontent.com/yaskor/unraid-docker-plugins/master/plugin/icon/emby.png</Icon>
     <Overview>
-        Bringing all of your home videos, music, and photos together into one place has never been easier.
-        Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.
+    Bringing all of your home videos, music, and photos together into one place has never been easier.
+    Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.
     </Overview>
-    <Registry>https://registry.hub.docker.com/r/binhex/arch-emby/</Registry>
-    <Repository>binhex/arch-emby</Repository>
+    <Registry>https://registry.hub.docker.com/u/emby/embyserver/</Registry>
+    <Repository>emby/embyserver:latest</Repository>
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
     <BindTime>true</BindTime>
@@ -20,14 +20,12 @@
     <Config Required="true" Type="Path" Name="Config Storage Path"
             Target="/config" Default="/mnt/user/appdata/config/emby" Mode="rw" Display="always-hide"
             Description="Directory which keeps configuration data"/>
-    <Config Required="true" Type="Path" Name="Config Storage Path"
-            Target="/media" Default="/mnt/user/" Mode="rw" Display="always-hide"
-            Description="Directory which keeps media"/>
+    <Config Required="true" Type="Path" Name="Media Storage Path"
+            Target="/mnt" Default="/mnt/user/" Mode="rw" Display="always-hide"
+            Description="Library locations directory"/>
     <ExtraParams>
-        -e 'USER_ID'='99'
-        -e 'GROUP_ID'='100'
-        -e 'UMASK'='000'
-        -e 'PUID'='99'
-        -e 'PGID'='100'
+        -e 'UID'='99'
+        -e 'GID'='100'
+        -e 'GIDLIST'='100'
     </ExtraParams>
 </Container>

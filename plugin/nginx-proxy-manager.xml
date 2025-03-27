@@ -4,19 +4,19 @@
     <Project>https://nginxproxymanager.com/</Project>
     <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/nginx-proxy-manager.png</Icon>
     <Overview>
-        Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise,
-        including free SSL, without having to know too much about Nginx or Letsencrypt.
-        [br][br]
-        For this container to be accessible from the internet, make sure ports
-        [b]80[/b] and [b]443[/b] on the internet side of your router are properly
-        forwarded to this container.
-        [br][br]
-        [b][span style='color: #ff8c2f;']Default credentials:[/span][/b][br]
-        [b]username[/b]: admin@example.com[br]
-        [b]password[/b]: changeme[br]
+    Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise,
+    including free SSL, without having to know too much about Nginx or Letsencrypt.
+    [br][br]
+    For this container to be accessible from the internet, make sure ports
+    [b]80[/b] and [b]443[/b] on the internet side of your router are properly
+    forwarded to this container.
+    [br][br]
+    [b][span style='color: #ff8c2f;']Default credentials:[/span][/b][br]
+    [b]username[/b]: admin@example.com[br]
+    [b]password[/b]: changeme[br]
     </Overview>
     <GitHub>https://github.com/jc21/nginx-proxy-manager</GitHub>
-	<Registry>https://hub.docker.com/r/jc21/nginx-proxy-manager/</Registry>
+    <Registry>https://hub.docker.com/r/jc21/nginx-proxy-manager/</Registry>
     <Repository>jc21/nginx-proxy-manager</Repository>
     <Privileged>false</Privileged>
     <BindTime>true</BindTime>
