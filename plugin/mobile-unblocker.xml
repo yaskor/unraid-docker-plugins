@@ -8,7 +8,8 @@
     <Repository>yaskor/mobile-unblocker</Repository>
     <Privileged>false</Privileged>
     <BindTime>true</BindTime>
-    <WebUI>http://[IP]:[PORT:15080]/health</WebUI>
+	<Shell>bash</Shell>
+    <WebUI>http://[IP]:[PORT:15080]/health?key=75292607533298860387</WebUI>
     <Network Default="bridge">bridge</Network> 
 	<Config Required="true" Type="Port" Name="Rest Service Port"
             Target="15080" Default="15080" Mode="tcp" Display="always-hide"
