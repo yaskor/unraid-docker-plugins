@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Name>mobile-unblocker</Name>
+    <Icon>https://raw.githubusercontent.com/yaskor/unraid-docker-plugins/master/plugin/icon/mobile-unblocker.png</Icon>
+    <Overview>Mobile Unblocker Service.</Overview>
+    <GitHub>https://github.com/yaskor/mobile-unblocker</GitHub>
+    <Registry>https://hub.docker.com/r/yaskor/mobile-unblocker</Registry>
+    <Repository>yaskor/mobile-unblocker</Repository>
+    <Privileged>false</Privileged>
+    <BindTime>true</BindTime>
+    <WebUI>http://[IP]:[PORT:15080]/health</WebUI>
+    <Network Default="bridge">bridge</Network> 
+	<Config Required="true" Type="Port" Name="Rest Service Port"
+            Target="15080" Default="15080" Mode="tcp" Display="always-hide"
+            Description="Rest Service Port"/>
+
+</Container>
