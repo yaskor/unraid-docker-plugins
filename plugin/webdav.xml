@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
     <Name>webdav</Name>
-    <Icon>https://raw.githubusercontent.com/samixxo/unraid-docker-plugins/master/plugin/icon/webdav.png</Icon>
+    <Icon>https://raw.githubusercontent.com/yaskor/unraid-docker-plugins/master/plugin/icon/webdav.png</Icon>
     <Overview>A webdav docker image.</Overview>
     <GitHub>https://github.com/sashgorokhov/docker-nginx-webdav</GitHub>
     <Registry>https://hub.docker.com/r/sashgorokhov/webdav</Registry>
